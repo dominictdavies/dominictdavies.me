@@ -17,7 +17,7 @@ RUN chown -R node:node /app
 USER node
 
 # Expose application port
-EXPOSE 3000
+EXPOSE 6464
 
 # Run application
 CMD ["node", "app.js"]
