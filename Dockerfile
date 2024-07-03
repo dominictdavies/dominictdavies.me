@@ -7,10 +7,13 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install production dependencies
-RUN npm install --production
+RUN npm install
 
 # Copy rest of application over
 COPY . .
+
+# Build application
+RUN npm run build
 
 # Change ownership of files and switch to node user
 RUN chown -R node:node /app
@@ -19,5 +22,5 @@ USER node
 # Expose application port
 EXPOSE 6464
 
-# Run application
-CMD ["node", "app.js"]
+# Preview application
+CMD ["npm", "run", "preview"]
