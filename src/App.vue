@@ -23,6 +23,8 @@ const handleSubmit = () => {
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 .container {
@@ -31,17 +33,23 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute; /* Added to ensure proper centering */
+  top: 0; /* Positioning from the top */
+  left: 0; /* Positioning from the left */
 }
 
 .title {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 20px;
 }
 
 .form {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
@@ -63,6 +71,7 @@ html, body {
 .image {
   max-width: 100%;
   height: auto;
+  max-height: 200px;
   margin-top: 20px;
 }
 </style>
