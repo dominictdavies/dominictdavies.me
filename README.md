@@ -63,4 +63,4 @@ npm run lint
 ## Docker Setup
 
 1. `docker build -t dominictdavies.me .`
-2. `docker run -p 6464:6464 dominictdavies.me`
+2. `docker run -p 6464:6464 -v $(pwd):/app dominictdavies.me`
