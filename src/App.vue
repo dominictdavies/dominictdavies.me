@@ -37,9 +37,9 @@ html, body {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-  position: absolute; /* Added to ensure proper centering */
-  top: 0; /* Positioning from the top */
-  left: 0; /* Positioning from the left */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .title {
