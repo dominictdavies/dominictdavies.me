@@ -23,4 +23,4 @@ USER node
 EXPOSE 6464
 
 # Preview application
-CMD ["npm", "run", "preview"]
+CMD ["npm", "run", "dev"]
