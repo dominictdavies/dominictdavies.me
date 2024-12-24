@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM node:latest
 
 # Set working directory for container
 WORKDIR /app
